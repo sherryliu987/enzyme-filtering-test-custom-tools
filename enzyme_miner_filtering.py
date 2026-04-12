@@ -10,7 +10,7 @@
 import os
 import pandas as pd
 
-print("V5")
+print("V7")
 
 # Load Excel file containing Enzyme Miner results into a DataFrame
 file_path = "inputs/inputExcelFile.xlsx"
