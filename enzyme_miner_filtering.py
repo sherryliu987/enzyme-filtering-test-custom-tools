@@ -10,6 +10,8 @@
 import os
 import pandas as pd
 
+print("version2")
+
 # Load Excel file containing Enzyme Miner results into a DataFrame
 file_path = "inputs/inputExcelFile.xlsx"
 full_data = pd.read_excel(file_path, sheet_name=1)
