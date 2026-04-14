@@ -8,7 +8,7 @@
 # coding: utf-8
 
 import os
-import pandas as 
+import pandas as pd
 
 print("v2")
 
