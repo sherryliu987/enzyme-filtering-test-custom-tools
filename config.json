@@ -1,0 +1,33 @@
+{
+  "displayName": "Enzyme Miner Filtering",
+  "description": "Filter EnzymeMiner results by date, kingdom, and transmembrane status.",
+  "functions": [
+    "Filter EnzymeMiner Excel output by 'First seen' cutoff date.",
+    "Filter by kingdom.",
+    "Exclude transmembrane proteins."
+  ],
+  "gpuType": "None",
+  "memory": "8Gi",
+  "cpu": 1,
+  "envVars": {},
+  "estTime": "0:5:0",
+  "paperUrl": "https://loschmidt.chemi.muni.cz/enzymeminer/",
+  "tags": ["utilities", "developability"],
+  "inputs": [
+    {
+      "name": "inputExcelFile",
+      "displayName": "EnzymeMiner Excel file",
+      "type": "file",
+      "extension": ["xlsx"],
+      "required": true,
+      "descr": "EnzymeMiner results workbook — sheet 2 is read."
+    },
+    {
+      "name": "cutoffDate",
+      "displayName": "First-seen cutoff (YYYY-MM-DD)",
+      "type": "text",
+      "default": "2014-10-01",
+      "descr": "Only rows first seen before this date are kept (default: pre-Nagoya)."
+    }
+  ]
+}
