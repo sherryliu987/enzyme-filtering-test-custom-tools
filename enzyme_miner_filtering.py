@@ -14,6 +14,9 @@ print("v2")
 
 print("v3")
 
+knowmol_csv = pd.read_csv("KnowMol_100k.csv")
+print(knowmol_csv.head())
+
 # Load Excel file containing Enzyme Miner results into a DataFrame
 file_path = "inputs/inputExcelFile.xlsx"
 full_data = pd.read_excel(file_path, sheet_name=1)
